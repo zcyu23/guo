@@ -8,7 +8,7 @@
 
 html {
     font-size: 62.5%;
-    color: #222;
+    color: #666;
 }
 
 ::selection {
@@ -23,9 +23,30 @@ ul {
 
 li {
     list-style-type: square;
+    list-style-position: inside;
+    color:#666666;
 
 }
 
+h3,h4{
+    font-weight:normal;
+    color:#666666;
+}
+
+h3{
+   display:block;
+   border-bottom:1px solid;
+   margin-bottom:1.5rem;
+   padding-bottom:1rem;
+}
+
+h4{
+    margin-top:0rem;
+    padding-top:0rem;
+    padding-bottom:0rem;
+    margin-bottom:1.5rem;
+    font-weight:bold;
+}
 
 
 /* ==========
@@ -60,7 +81,7 @@ li {
 body {
     font-size: 1.8rem;
     line-height: 1.5;
-    color:#222;
+    color:#666;
 }
 
 a {
@@ -229,13 +250,163 @@ header .join .logon ul li{
     background-position: -50px -496px; ;
 } 
 
+/*======= 
+中部内容
+=======*/
+
+.container{ 
+    width:80%;
+    margin:0 auto;
+    font-size:1.4rem;
+} 
+
+/* ======
+中部第一块
+======== */
 
 
-/* 主要类容 */
+.container .m-cont{
+    float:left;
+    width:67%;   
+}
+
+.container .m-cont .item ul li:first-child>a{
+    height:90px;
+    float:left;
+    width:44%;
+    margin:0;
+    padding:0;
+} 
+
+/* .container .m-cont .item ul li:first-child>a:hover{
+    filter:chroma(color=#f3f3f3)
+}
+ */
+.container .m-cont .item ul li:first-child>a.container .m-cont .item ul li{
+    padding-bottom:1rem;
+}
+
+ .container .m-cont .item .cont{
+    width:55.5%;
+    float:left;   
+    margin-left:0.5%;
+    
+    
+}
+.container .m-cont .item .cont h4{
+    margin-bottom:1rem;
+}
+
+.container .m-cont .item .cont p{
+   font-size:1.2rem;
+   padding:0 ;
+   margin:0;
+ 
+}
+
+.container .m-cont .item .cont p a{
+   color:#66aed3;
+   padding-left:2.2rem;
+   font-size:1.4rem;
+
+}
 
 
-/* 右边栏 */
+.container .m-cont .rec{
+   width:100%;
+   
+}
 
+.container .m-cont .rec .rec-h{
+   
+    border-bottom:1px solid #f3f3f3;
+    margin-bottom:0rem;
+    
+}
+
+.container .m-cont .rec .rec-ad{
+     float:left;
+     width:48%;
+    
+}
+
+
+
+
+
+.container .m-cont .rec .rec-ad .item .bot-text{
+  
+    color:#fff;
+    background-color:#000;
+    opacity:0.3;
+     text-align:center;
+    line-height:3rem;
+
+
+}
+
+.container .m-cont .rec .rec-cont {
+  float:right;
+  width:48%;
+   
+}
+.container .m-cont .rec .rec-cont ul li {
+   list-style:none;
+   line-height:3.7rem;
+   
+}
+
+.container .rec h3{
+    color:#666;
+    border-bottom-color:#f3f3f3;
+}
+
+.container .ques h3{
+  color:#148fed;
+  border-bottom-color:#8ec0e6;
+}
+
+.container .hot h3{
+   color:#2f95e4;
+   border-bottom-color:#74cd64;
+}
+
+.container .ques .item,
+.container .hot .item{
+    width:48%;
+    float: left;
+    margin:1.5% 1%;
+  
+}
+
+
+
+.container .m-cont .ques .item ul li:first-child,
+.container .m-cont .hot .item ul li:first-child
+{
+    list-style:none;
+}
+
+
+
+/* =======
+右边栏
+======= */
+
+.container .rt-cont{
+    float:left;
+    width:31%;
+   margin-left:2%;
+   margin-top:6rem;
+}
+
+.container .rt-cont .group p{
+    font-size:1.6rem;
+} 
+.container .rt-cont .group p a{
+    float:right;
+    font-size:1.4rem;
+}
 
 
 
@@ -244,4 +415,47 @@ header .join .logon ul li{
 
 /* 底部 */
 
+footer {
+    width:80%;
+    margin:0 auto;
+    
+    margin-top:2rem;
+}
 
+footer .ft-nav {
+    border-bottom:1px solid #f3f3f3;
+    font-size:1.5rem;
+}
+
+footer ul {
+  text-align:center;
+
+}
+
+footer ul li{
+    display: inline-block;
+    text-align:center;
+    padding:0 1.2rem;
+    
+
+}
+
+footer ul li a{
+    color:#5aa8f9;
+}
+
+footer p{
+    text-align:center;
+    font-size:1.2rem;
+
+}
+
+footer p a{
+    display: inline-block;
+    text-decoration:none;
+
+}
+
+footer p a:hover{
+    text-decoration:none;
+}
