@@ -1,0 +1,247 @@
+/************
+ * 页面样式
+ ************/
+
+/* ==========
+   基本默认值
+   ========== */
+
+html {
+    font-size: 62.5%;
+    color: #222;
+}
+
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: square;
+
+}
+
+
+
+/* ==========
+   工具样式
+   ========== */
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ===============
+   浏览器更新提示
+   =============== */
+
+.browserupgrade {
+    margin: 0;
+    padding: 1rem;
+    background: #fff;
+}
+
+/* ===============
+   自定义页面样式
+   =============== */
+
+body {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color:#222;
+}
+
+a {
+    color: #666666;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: none;
+    text-decoration: underline;
+}
+
+/* 网站头部 */
+header .bg1{
+   background-color: #fafafa;
+}
+header .bg2{
+   background-color: #f3f3f3;
+}
+header .top{
+    width:80%;
+    margin:0 auto;
+    line-height:3.4rem;
+    color: #8aa733;
+    
+}
+ 
+header .logo{
+    background:url(../img/logo.png) no-repeat;
+    display: inline-block;
+    float: left;
+    width:118px;
+    height:35px;
+    margin:1.5rem;
+}  
+
+header .top ul{
+    display: inline-block;
+    float:left;
+}
+
+header .top ul li {
+    display: inline-block;
+    list-style:none;
+    
+    margin:2rem;
+    text-align: center;
+
+}
+
+header .top ul li a{
+    color:#8aa733;
+
+}
+
+header .top .search{
+    float:right;
+    border:0;
+    margin-top:1rem;
+    
+    font-size:1.6rem;
+    background-color:#fff;
+    box-shadow: 0px 0px 4px #ededed; 
+    }
+
+
+header .top .search .txt{
+  line-height:normal;
+  margin:0.5rem 0;
+  border:none;outline:none;
+}
+
+header .top .search .btn{
+    
+    border:none;
+    margin:1rem 0;
+    
+    background:url(../img/5-icon.png) 0 -75px no-repeat;
+    width:20px;
+    height:18px;
+}
+
+header .top .search .btn:hover{
+    background:url(../img/5-icon.png) 0 -97px no-repeat;
+}
+
+header .join{    
+    width:80%;
+    margin:0rem auto;
+    font-size:2.2rem;
+    padding:1%;
+
+    
+}
+header .join p{
+    display: inline-block;
+    margin-left:15%;
+    color:#333;
+    
+}
+
+header .join  form{
+   display: inline-block;
+
+}
+
+header .join form input{
+    color:#f7f7bb;
+    border:0;
+    outline:none;
+    background-color:#88c833;
+    padding:0.5rem 4rem;
+    margin-left:2rem;
+}
+
+header .join .logon{
+    color:#999;
+    font-size:1.8rem;
+    margin-left:50%; 
+    padding-top:0;  
+}
+
+header .join .logon .span{
+    padding-bottom:1rem;
+}
+
+header .join .logon ul{
+  display: inline-block;
+}
+
+header .join .logon ul li{
+    
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left:15px;
+}
+
+
+.join .logon ul li .icon{
+    display: inline-block;
+    text-indent: -999rem;
+    margin-right: 0.5rem;
+    background: url(http://static.guokr.com/skin/imgs/4-icon.png) no-repeat;
+    background-size: 602px 570px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.join .logon ul li .weixin{
+    background-position: -50px -471px ;
+} 
+
+.join .logon ul li .weibo{
+    
+    background-position: 0 -496px ;
+} 
+
+.join .logon ul li .QQ{
+    background-position: -75px -471px; ;
+} 
+
+.join .logon ul li .douban{
+    background-position: -50px -496px; ;
+} 
+
+
+
+/* 主要类容 */
+
+
+/* 右边栏 */
+
+
+
+
+
+
+
+/* 底部 */
+
+
