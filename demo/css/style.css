@@ -94,40 +94,56 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
+.item{
+    padding-bottom:2rem;
+
+}
+
 /* 网站头部 */
 header .bg1{
    background-color: #fafafa;
 }
+
 header .bg2{
    background-color: #f3f3f3;
 }
+
+
 header .top{
     width:80%;
     margin:0 auto;
-    line-height:3.4rem;
-    color: #8aa733;
-    
+    color: #8aa733;    
 }
- 
+
+#top-hide{
+    display: none;
+}
+
+header .top .dropdown-toggle{
+    text-decoration:none;
+}
+
+
 header .logo{
     background:url(../img/logo.png) no-repeat;
-    display: inline-block;
+    
     float: left;
     width:118px;
     height:35px;
-    margin:1.5rem;
+    margin:1.5rem 1rem;
 }  
 
 header .top ul{
-    display: inline-block;
+   
     float:left;
+    width:60%;
 }
 
-header .top ul li {
+header .top ul>li {
     display: inline-block;
     list-style:none;
     
-    margin:2rem;
+    margin:2rem 1.8%;
     text-align: center;
 
 }
@@ -142,7 +158,7 @@ header .top .search{
     border:0;
     margin-top:1rem;
     
-    font-size:1.6rem;
+    font-size:1.4rem;
     background-color:#fff;
     box-shadow: 0px 0px 4px #ededed; 
     }
@@ -151,7 +167,8 @@ header .top .search{
 header .top .search .txt{
   line-height:normal;
   margin:0.5rem 0;
-  border:none;outline:none;
+  border:none;
+  outline:none;
 }
 
 header .top .search .btn{
@@ -172,20 +189,19 @@ header .join{
     width:80%;
     margin:0rem auto;
     font-size:2.2rem;
-    padding:1%;
-
+    padding:3% 1%;
     
 }
 header .join p{
     display: inline-block;
-    margin-left:15%;
+    margin-left:10%;
     color:#333;
-    
+   
 }
 
 header .join  form{
    display: inline-block;
-
+  
 }
 
 header .join form input{
@@ -198,18 +214,23 @@ header .join form input{
 }
 
 header .join .logon{
+    width:30%;
+    margin-left:52%;
     color:#999;
     font-size:1.8rem;
-    margin-left:50%; 
-    padding-top:0;  
+   
 }
 
-header .join .logon .span{
-    padding-bottom:1rem;
+header .join .logon .logon-text{
+    display:block;
+    float:left;
 }
 
-header .join .logon ul{
-  display: inline-block;
+#lh li{
+ 
+    margin-bottom:0;
+    margin-top:0;
+
 }
 
 header .join .logon ul li{
@@ -250,6 +271,80 @@ header .join .logon ul li{
     background-position: -50px -496px; ;
 } 
 
+
+
+@media only screen and (max-width: 50em) {
+    header .bg1,header .bg2{
+        display:none;}
+    
+    #top-hide{       
+        display: inline-block;
+        width:100%;
+        color:#f3f3f3;
+        text-align:center;
+    }
+    
+    #top-hide a {
+        display: inline-block;
+        text-decoration:none;
+        width:15%;
+        font-size:1.5rem;      
+        padding:1.5%;
+    }
+
+    #top-hide a+a{
+        margin-left:1.2%;
+    }
+
+    h3,h4,body{
+        font-size:1.5rem;
+        font-weight:normal;
+    }
+
+    .container{
+        width:100% !important;
+        clear:both;
+    }
+
+    .container .m-cont .rec .rec-ad{
+     float:none;
+     width:100% !important;    
+}
+    
+    .container .ques .item,
+    .container .hot .item{
+    width:100% !important;      
+}
+   
+   .container .m-cont .item .cont p a{  
+   padding-left:1rem;
+}
+    
+    .container .m-cont .item .cont{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}   
+
+    .container .m-cont .rec .rec-cont {
+     float:none;
+     width:100% !important;   
+}
+
+
+.container .m-cont .rec .rec-cont ul li {
+   line-height:1.5rem;
+   
+}
+
+   
+}
+    
+    
+
+
+
 /*======= 
 中部内容
 =======*/
@@ -267,21 +362,18 @@ header .join .logon ul li{
 
 .container .m-cont{
     float:left;
-    width:67%;   
+    width:100%;   
 }
 
 .container .m-cont .item ul li:first-child>a{
     height:90px;
     float:left;
-    width:44%;
+    
     margin:0;
     padding:0;
 } 
 
-/* .container .m-cont .item ul li:first-child>a:hover{
-    filter:chroma(color=#f3f3f3)
-}
- */
+
 .container .m-cont .item ul li:first-child>a.container .m-cont .item ul li{
     padding-bottom:1rem;
 }
@@ -293,8 +385,13 @@ header .join .logon ul li{
     
     
 }
+
+.container .m-cont .item .cont>h4{
+    
+}
+
 .container .m-cont .item .cont h4{
-    margin-bottom:1rem;
+    margin-bottom:0.5rem;
 }
 
 .container .m-cont .item .cont p{
@@ -333,13 +430,12 @@ header .join .logon ul li{
 
 
 
-
 .container .m-cont .rec .rec-ad .item .bot-text{
   
     color:#fff;
     background-color:#000;
     opacity:0.3;
-     text-align:center;
+    text-align:center;
     line-height:3rem;
 
 
@@ -347,12 +443,13 @@ header .join .logon ul li{
 
 .container .m-cont .rec .rec-cont {
   float:right;
-  width:48%;
-   
+  width:48%;   
 }
+
+
 .container .m-cont .rec .rec-cont ul li {
    list-style:none;
-   line-height:3.7rem;
+   line-height:2.6rem;
    
 }
 
@@ -373,42 +470,22 @@ header .join .logon ul li{
 
 .container .ques .item,
 .container .hot .item{
-    width:48%;
+    width:49%;
     float: left;
-    margin:1.5% 1%;
+   
   
 }
 
-
+.container .m-cont .ques .item ul ,
+.container .m-cont .hot .item ul{
+    mrgin:0 auto;
+}
 
 .container .m-cont .ques .item ul li:first-child,
 .container .m-cont .hot .item ul li:first-child
 {
     list-style:none;
 }
-
-
-
-/* =======
-右边栏
-======= */
-
-.container .rt-cont{
-    float:left;
-    width:31%;
-   margin-left:2%;
-   margin-top:6rem;
-}
-
-.container .rt-cont .group p{
-    font-size:1.6rem;
-} 
-.container .rt-cont .group p a{
-    float:right;
-    font-size:1.4rem;
-}
-
-
 
 
 
