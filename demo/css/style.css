@@ -288,12 +288,12 @@ header .join .logon ul li{
         display: inline-block;
         text-decoration:none;
         width:14%;
-        font-size:1.5rem;      
+        font-size:1.4rem;      
         padding:1.5%;
     }
 
     #top-hide a+a{
-        margin-left:1.2%;
+        margin-left:1%;
     }
 
     h3,h4,body{
